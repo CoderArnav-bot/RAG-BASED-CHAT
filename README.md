@@ -32,8 +32,8 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 1. Clone this repository:
    ```bash
-   https://github.com/CoderArnav-bot/RAG-BASED-CHAT.git
-   cd pdf-chatbot
+   git clone https://github.com/CoderArnav-bot/RAG-BASED-CHAT.git
+   cd RAG-BASED-CHAT
    ```
 2. Create and activate a virtual environment:
    ```bash
@@ -52,14 +52,13 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 1. Start the FastAPI backend:
    ```bash
-   cd backend
-   uvicorn app:app --reload
+   python backend\app.py
    ```
 
 2. Start the Streamlit frontend in a new terminal:
    ```bash
    cd frontend
-   streamlit run app.py
+   streamlit run frontend\app.py
    ```
 
 3. Open your browser and navigate to [http://localhost:8501](http://localhost:8501)
@@ -91,6 +90,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 ## Future Improvements
 
+- Dynamic shifting of LLM 
 - OCR support for scanned documents
 - Multi-document support
 - Filter responses by document sections
