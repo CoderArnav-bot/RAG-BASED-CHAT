@@ -32,7 +32,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/pdf-chatbot.git
+   https://github.com/CoderArnav-bot/RAG-BASED-CHAT.git
    cd pdf-chatbot
    ```
 2. Create and activate a virtual environment:
