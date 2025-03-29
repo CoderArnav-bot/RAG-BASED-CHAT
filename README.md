@@ -45,7 +45,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
    ```
 3. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.txt --no-cache-dir
    ```
 
 ## Running the Application
@@ -90,7 +90,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 ## Future Improvements
 
-- Dynamic shifting of LLM 
+- Dynamic switching between LLM 
 - OCR support for scanned documents
 - Multi-document support
 - Filter responses by document sections
