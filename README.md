@@ -108,7 +108,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 ## Demo
 
-- <video src="https://github.com/CoderArnav-bot/RAG-BASED-CHAT/blob/main/demo/PDF%20Chatbot%20Demo.mp4" controls width="600"></video>
+- ![Demo]([https://your-link-to-the-gif.com/demo.gif](https://github.com/CoderArnav-bot/RAG-BASED-CHAT/blob/main/demo/PDF%20Chatbot%20Demo.mp4))
 
 
 
