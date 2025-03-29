@@ -108,10 +108,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 ## Demo
 
-- [Recorded Video Demo](#) (Replace with the actual link)
-- [Live Chatbot Link](#) (Replace with the actual link)
+- <video src="https://github.com/CoderArnav-bot/RAG-BASED-CHAT/blob/main/demo/PDF%20Chatbot%20Demo.mp4" controls width="600"></video>
 
-## License
 
-This project is open-source and available under the MIT License.
 
