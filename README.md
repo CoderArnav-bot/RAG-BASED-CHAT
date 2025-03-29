@@ -27,6 +27,15 @@ This repository contains a question-answering chatbot that uses a PDF document a
    ollama pull llama3.2
    ```
 3. Python 3.8+ installed
+4. Verify that Ollama is running:
+   ```bash
+   curl http://localhost:11434/api/tags
+   ```
+   - If it returns a list of models, Ollama is running.
+   - If you get a connection error, start Ollama manually:
+     ```bash
+     ollama serve
+     ```
 
 ## Installation
 
@@ -90,7 +99,8 @@ This repository contains a question-answering chatbot that uses a PDF document a
 
 ## Future Improvements
 
-- Dynamic switching between LLM 
+- Adding logs for each request
+- Dynamic switching between LLMs
 - OCR support for scanned documents
 - Multi-document support
 - Filter responses by document sections
@@ -104,3 +114,4 @@ This repository contains a question-answering chatbot that uses a PDF document a
 ## License
 
 This project is open-source and available under the MIT License.
+
