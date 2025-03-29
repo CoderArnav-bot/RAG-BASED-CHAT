@@ -107,8 +107,7 @@ This repository contains a question-answering chatbot that uses a PDF document a
 - Improved answer validation
 
 ## Demo
+https://github.com/user-attachments/assets/779359ca-855f-4164-8a6d-a0b1f71c82b6
 
-- ![Demo]([https://your-link-to-the-gif.com/demo.gif](https://github.com/CoderArnav-bot/RAG-BASED-CHAT/blob/main/demo/PDF%20Chatbot%20Demo.mp4))
-
-
+- Tested on cpu based low end pc.
 
