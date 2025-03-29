@@ -1,1 +1,106 @@
-# RAG-BASED-CHAT
+# PDF Chatbot with LangChain and Llama 3.2
+
+This repository contains a question-answering chatbot that uses a PDF document as its knowledge base. It leverages LangChain, Ollama running Llama 3.2, FastAPI, and Streamlit to provide an end-to-end solution for interacting with PDF content.
+
+## Features
+
+- Upload and process PDF documents
+- Ask questions about the PDF content
+- Retrieve accurate answers with citations to source pages
+- Streaming responses for a better user experience
+- Simple and intuitive UI
+
+## Technologies Used
+
+- **LangChain**: Orchestrates document processing and retrieval-augmented generation (RAG)
+- **Ollama**: Runs Llama 3.2 locally for inference
+- **FastAPI**: Provides the backend API
+- **Streamlit**: Delivers a clean, interactive frontend
+- **FAISS**: Enables efficient vector similarity search
+- **HuggingFace Sentence Transformers**: Powers text embeddings
+
+## Prerequisites
+
+1. [Ollama](https://ollama.com/) installed locally
+2. Llama 3.2 model pulled in Ollama:
+   ```bash
+   ollama pull llama3.2
+   ```
+3. Python 3.8+ installed
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/pdf-chatbot.git
+   cd pdf-chatbot
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+
+   ```bash
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+1. Start the FastAPI backend:
+   ```bash
+   cd backend
+   uvicorn app:app --reload
+   ```
+
+2. Start the Streamlit frontend in a new terminal:
+   ```bash
+   cd frontend
+   streamlit run app.py
+   ```
+
+3. Open your browser and navigate to [http://localhost:8501](http://localhost:8501)
+
+## Usage
+
+1. Upload a PDF document using the sidebar.
+2. Wait for the processing to complete (indicated by a success message).
+3. Ask questions in the chat input at the bottom of the page.
+4. View AI-generated answers with page citations.
+
+## How It Works
+
+1. **Document Processing**:
+   - The PDF text is extracted and split into chunks with overlap.
+   - Each chunk is embedded and stored in a FAISS vector store.
+
+2. **Question Answering**:
+   - The user's question is embedded.
+   - The most relevant chunks are retrieved from the vector store.
+   - Context and question are sent to Llama 3.2.
+   - An answer is generated and displayed with citations.
+
+## Limitations
+
+- Works best with text-based PDFs (not scanned documents)
+- Processing large PDFs may take some time
+- Answer quality depends on the Llama 3.2 model capabilities
+
+## Future Improvements
+
+- OCR support for scanned documents
+- Multi-document support
+- Filter responses by document sections
+- Improved answer validation
+
+## Demo
+
+- [Recorded Video Demo](#) (Replace with the actual link)
+- [Live Chatbot Link](#) (Replace with the actual link)
+
+## License
+
+This project is open-source and available under the MIT License.
